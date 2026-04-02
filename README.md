@@ -25,7 +25,7 @@ Postman (API Testing)
 
 📂 Project Structure
 <br/>
-PR_BLOG_PROJECT/
+PR_BLOG
 <br/>
 │
 <br/>
@@ -73,7 +73,6 @@ PR_BLOG_PROJECT/
 
 ⚙️ Installation & Setup
 Clone the repository
-[git clone https://github.com/your-username/blog-api.git](https://github.com/amitdabhi01/Blog-Node-Js-Project)
 cd blog-api
 Install dependencies
 npm install
@@ -88,19 +87,21 @@ npm run dev
 
 
 🌐 Base URL
-https://blog-node-js-project.onrender.com
+https://pr-blog.onrender.com/
 
 
 📬 API Endpoints
 🔹 1. Check Server
 GET /
-<img width="1920" height="1080" alt="Screenshot 2026-04-01 143536" src="https://github.com/user-attachments/assets/66844430-c0d5-4b66-a9b6-3c34c22f2742" />
+<img width="1920" height="1080" alt="Screenshot 2026-04-02 112935" src="https://github.com/user-attachments/assets/6eedfe04-1584-4615-90be-08744471d419" />
+
 Response: "Hello from server"
 
 
 🔹 2. Create Blog
 POST /blog/add
-<img width="1920" height="1080" alt="Screenshot 2026-04-01 143541" src="https://github.com/user-attachments/assets/b1b75623-087b-433a-95dc-68dc9470f63a" />
+<img width="1920" height="1080" alt="Screenshot 2026-04-02 113340" src="https://github.com/user-attachments/assets/201fde48-fd7a-4516-91b6-5c4dcd89d945" />
+
 Body (form-data):
 title (text)
 author (text)
@@ -111,19 +112,21 @@ blogVideo (file, optional)
 
 🔹 3. Get All Blogs
 GET /blog/allBlogs
-<img width="1920" height="1080" alt="Screenshot 2026-04-01 143547" src="https://github.com/user-attachments/assets/8ea3f036-d007-420b-9785-fb3d4a91418c" />
+<img width="1920" height="1080" alt="Screenshot 2026-04-02 113549" src="https://github.com/user-attachments/assets/30e4d008-b0a7-48f8-bce1-1fee537b59c4" />
 
 
 
 🔹 4. Get Blog by ID
 GET /blog/:id
-<img width="1920" height="1080" alt="Screenshot 2026-04-01 143552" src="https://github.com/user-attachments/assets/79f5626e-d8ff-4b6d-afa0-ae4992f927fe" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-04-02 113658" src="https://github.com/user-attachments/assets/06cff71d-9a70-4c55-90ad-d0fe472a78c9" />
 
 
 
 🔹 5. Update Blog
 PATCH /blog/update/:id
-<img width="1920" height="1080" alt="Screenshot 2026-04-01 143559" src="https://github.com/user-attachments/assets/f0e62441-804e-4b1c-a51d-6f5eccd7d90e" />
+<img width="1920" height="1080" alt="Screenshot 2026-04-02 113913" src="https://github.com/user-attachments/assets/a618bb57-065c-426f-ac99-e18b3ed78587" />
+
 
 Body (form-data):
 title
@@ -135,7 +138,8 @@ blogVideo (file)
 
 🔹 6. Delete Blog
 DELETE /blog/delete/:id
-<img width="1920" height="1080" alt="Screenshot 2026-04-01 143605" src="https://github.com/user-attachments/assets/5c4abc44-a1d5-4936-8b58-a2e293ff9ffc" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-04-02 114308" src="https://github.com/user-attachments/assets/2022eb1a-201c-4872-a912-57e826ded5d3" />
 
 
 Response:
@@ -172,4 +176,4 @@ User roles
 
 
 🙋‍♂️ Author
-Amit Dabhi
+jay parmar
