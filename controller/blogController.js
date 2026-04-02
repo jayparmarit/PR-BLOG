@@ -65,7 +65,7 @@ const updateBlog = async (req, res, next) => {
       return next(new HttpError("Blog not found", 404));
     }
 
-    if ((req.body || Object.keys(req.body).length === 0) && !req.file) {
+    if ((!req.body || Object.keys(req.body).length === 0) && !req.file) {
       return next(new HttpError("No update data provided", 400));
     }
 
@@ -74,9 +74,9 @@ const updateBlog = async (req, res, next) => {
     const allowedUpdates = ["title", "author", "content"];
 
     const isValid = update.every((field) => {
-      allowedUpdates.includes(field);
+      return allowedUpdates.includes(field);
     });
-
+    
     if (!isValid) {
       return next(new HttpError("invalid update fields"), 400);
     }

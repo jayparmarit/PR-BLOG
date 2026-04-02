@@ -6,7 +6,7 @@ import connectDB from "./config/db.js";
 import HttpError from "./middleware/HttpError.js";
 import blogRoutes from "./routes/blogRoutes.js";
 
-dotenv.config({ path: "./.env "})
+dotenv.config({path:"./.env"})
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(express.json());
 app.use("/blog", blogRoutes);
 
 app.get("/", (req, res) => {
-  res.status(200).json("Hello from sever running");
+  res.status(200).json("Hello from sever");
 });
 
 app.use((req, res, next) => {
